@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const socket = io("https://crypto-crash-game-76s4.onrender.com");
+const socket = io("https://crypto-crash-game-9btz.onrender.com");
 
 const CashoutButton = ({ playerId, currency }) => {
   const [message, setMessage] = useState(null);
@@ -31,7 +31,7 @@ const CashoutButton = ({ playerId, currency }) => {
     try {
       // optional API backup (for transaction logging)
       await axios.post(
-        "https://crypto-crash-game-76s4.onrender.com/api/game/cashout",
+        "https://crypto-crash-game-9btz.onrender.com/api/game/cashout",
         {
           playerId,
           multiplier,

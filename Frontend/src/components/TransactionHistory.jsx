@@ -8,7 +8,7 @@ const TransactionHistory = ({ playerId }) => {
   const fetchTransactions = async () => {
     try {
       const res = await axios.get(
-        `https://crypto-crash-game-76s4.onrender.com/api/wallet/transactions/${playerId}`
+        `https://crypto-crash-game-9btz.onrender.com/api/wallet/transactions/${playerId}`
       );
       setTransactions(res.data);
     } catch (err) {

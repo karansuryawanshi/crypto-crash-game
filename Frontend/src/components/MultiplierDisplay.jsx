@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("https://crypto-crash-game-76s4.onrender.com"); // ✅ change if backend is hosted
+const socket = io("https://crypto-crash-game-9btz.onrender.com"); // ✅ change if backend is hosted
 
 const MultiplierDisplay = () => {
   const [multiplier, setMultiplier] = useState(1);

@@ -10,7 +10,7 @@
       "request": {
         "method": "POST",
         "header": [{ "key": "Content-Type", "value": "application/json" }],
-        "url": { "raw": "https://crypto-crash-game-76s4.onrender.com/api/game/bet" },
+        "url": { "raw": "https://crypto-crash-game-9btz.onrender.com/api/game/bet" },
         "body": {
           "mode": "raw",
           "raw": "{\n  \"playerId\": \"<INSERT_PLAYER_ID>\",\n  \"usdAmount\": 10,\n  \"currency\": \"btc\"\n}"
@@ -22,7 +22,7 @@
       "request": {
         "method": "POST",
         "header": [{ "key": "Content-Type", "value": "application/json" }],
-        "url": { "raw": "https://crypto-crash-game-76s4.onrender.com/api/game/cashout" },
+        "url": { "raw": "https://crypto-crash-game-9btz.onrender.com/api/game/cashout" },
         "body": {
           "mode": "raw",
           "raw": "{\n  \"playerId\": \"<INSERT_PLAYER_ID>\",\n  \"multiplier\": 2,\n  \"currency\": \"btc\"\n}"
@@ -34,7 +34,7 @@
       "request": {
         "method": "GET",
         "url": {
-          "raw": "https://crypto-crash-game-76s4.onrender.com/api/wallet/<INSERT_PLAYER_ID>"
+          "raw": "https://crypto-crash-game-9btz.onrender.com/api/wallet/<INSERT_PLAYER_ID>"
         }
       }
     }

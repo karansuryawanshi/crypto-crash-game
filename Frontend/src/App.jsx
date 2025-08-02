@@ -10,7 +10,7 @@ const App = () => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    fetch("https://crypto-crash-game-76s4.onrender.com/api/players/all")
+    fetch("https://crypto-crash-game-9btz.onrender.com/api/players/all")
       .then((res) => res.json())
       .then((data) => setPlayers(data));
   }, []);

@@ -7,7 +7,7 @@ const WalletInfo = ({ playerId }) => {
 
   const fetchWallet = async (id) => {
     const res = await fetch(
-      `https://crypto-crash-game-76s4.onrender.com/api/wallet/${id}`
+      `https://crypto-crash-game-9btz.onrender.com/api/wallet/${id}`
     );
     const data = await res.json();
     setWallet(data);

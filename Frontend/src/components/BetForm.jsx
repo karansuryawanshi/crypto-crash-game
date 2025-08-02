@@ -16,7 +16,7 @@ const BetForm = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://crypto-crash-game-76s4.onrender.com/api/game/bet",
+        "https://crypto-crash-game-9btz.onrender.com/api/game/bet",
         {
           playerId,
           usdAmount: parseFloat(usdAmount),
@@ -32,7 +32,7 @@ const BetForm = () => {
   };
 
   useEffect(() => {
-    fetch("https://crypto-crash-game-76s4.onrender.com/api/players/all")
+    fetch("https://crypto-crash-game-9btz.onrender.com/api/players/all")
       .then((res) => res.json())
       .then((data) => setPlayers(data));
   }, []);
