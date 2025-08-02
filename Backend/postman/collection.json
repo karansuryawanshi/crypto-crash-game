@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "crypto-crash-demo",
+    "name": "Crypto Crash Game",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Place Bet",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "https://crypto-crash-game-76s4.onrender.com/api/game/bet" },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"playerId\": \"<INSERT_PLAYER_ID>\",\n  \"usdAmount\": 10,\n  \"currency\": \"btc\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Cashout",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "https://crypto-crash-game-76s4.onrender.com/api/game/cashout" },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"playerId\": \"<INSERT_PLAYER_ID>\",\n  \"multiplier\": 2,\n  \"currency\": \"btc\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Check Wallet",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://crypto-crash-game-76s4.onrender.com/api/wallet/<INSERT_PLAYER_ID>"
+        }
+      }
+    }
+  ]
+}
